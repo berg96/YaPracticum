@@ -21,3 +21,13 @@ def print_friends_count(friends_count):
 
 print_friends_count (0)
 print_friends_count(8)
+
+def print_home(name, planet):
+    print(name + ' живет на планете ' + planet)
+
+tatooin = 'Татуин'
+greeting = 'Да пребудет с тобой Сила!'
+my_son = 'Люк, я твой отец!'
+luke = 'Люк Скайуокер'
+
+print_home(luke, tatooin) 
