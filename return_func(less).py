@@ -22,8 +22,8 @@ def calc_cube_area(side):
 
 print('Необходимая площадь стекла для 8 кубов, кв.м:', 8*calc_cube_area(3))
 
-def calc_cube(side):
-    print('Для 8 кубов понадобится палок (м):', 8*calc_cube_perimeter(side), 'и стекла (кв.м):', 8*calc_cube_area(side))
+def calc_cube(side,amount):
+    print('Для', amount, 'кубов понадобится палок (м):', amount*calc_cube_perimeter(side), 'и стекла (кв.м):', amount*calc_cube_area(side))
 
-calc_cube(3)
+calc_cube(3,2)
 
