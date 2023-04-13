@@ -7,14 +7,16 @@ rooms_num = len(flat)
 
 print(rooms_num)
 
-room_size = 22.19
-count = 0
+def rooms_equal(room_size,room_list):
+    count = 0
 
-for room in flat:
-    if room == room_size:
-        count += 1
+    for room in room_list:
+        if room == room_size:
+            count += 1
 
-print('Комнат площадью', room_size, 'кв.м:', count)
+    print('Комнат площадью', room_size, 'кв.м:', count)
+
+rooms_equal(5.55, flat)
 
 sum_area = 0
 
