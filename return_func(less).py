@@ -16,3 +16,8 @@ def calc_cube_perimeter(side):
     return side * 12
 
 print('Необходимый метраж палок для 8 кубов:', 8*calc_cube_perimeter(3))
+
+def calc_cube_area(side):
+    return 6* side * side
+
+print('Необходимая площадь стекла для 8 кубов, кв.м:', 8*calc_cube_area(3))
