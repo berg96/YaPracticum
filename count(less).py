@@ -12,6 +12,13 @@ count = 0
 
 for room in flat:
     if room == room_size:
-        count +=1
+        count += 1
 
 print('Комнат площадью', room_size, 'кв.м:', count)
+
+sum_area = 0
+
+for room in flat:
+    sum_area += room
+
+print('Общая площадь =', sum_area)
