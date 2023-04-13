@@ -6,3 +6,12 @@ flat = [
 rooms_num = len(flat)
 
 print(rooms_num)
+
+room_size = 22.19
+count = 0
+
+for room in flat:
+    if room == room_size:
+        count +=1
+
+print('Комнат площадью', room_size, 'кв.м:', count)
