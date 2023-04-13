@@ -26,3 +26,4 @@ def calc_cube(side):
     print('Для 8 кубов понадобится палок (м):', 8*calc_cube_perimeter(side), 'и стекла (кв.м):', 8*calc_cube_area(side))
 
 calc_cube(3)
+
