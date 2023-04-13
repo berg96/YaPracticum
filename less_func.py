@@ -38,3 +38,8 @@ def print_home2(name='Инкогнито', planet='Икс'):
 print_home2('Дроид-убийца')
 print_home2(planet='Земля') 
 print_home2(planet='Земля', name='Винни Пух')  
+
+def lets_go(name='Друг', target='учить Python'):
+    print(name + ', пойдём ' + target)
+
+lets_go()
