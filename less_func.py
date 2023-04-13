@@ -31,3 +31,8 @@ my_son = 'Люк, я твой отец!'
 luke = 'Люк Скайуокер'
 
 print_home(luke, tatooin) 
+
+def print_home2(name='Инкогнито', planet='Икс'):
+    print(name + ' живёт на планете ' + planet)
+
+print_home2('Дроид-убийца')
