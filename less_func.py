@@ -36,3 +36,5 @@ def print_home2(name='Инкогнито', planet='Икс'):
     print(name + ' живёт на планете ' + planet)
 
 print_home2('Дроид-убийца')
+print_home2(planet='Земля') 
+print_home2(planet='Земля', name='Винни Пух')  
