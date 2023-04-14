@@ -60,3 +60,12 @@ new_words = {'мозг': 'brain', 'логика': 'logic'}
 english.update(new_words)
 print(english)
 print(new_words)
+
+friends =  {
+    'Серёга': 'Омск', 
+    'Соня': 'Москва', 
+    'Дима': 'Челябинск'
+}
+friends['Оля'] = 'Калининград'
+friends['Артем'] = 'Мурманск'
+print(friends)
