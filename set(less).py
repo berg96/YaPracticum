@@ -36,3 +36,14 @@ unique_cities = set(cities)
 for city in unique_cities:
     print('-',city)
 
+playlist = {
+    'Venus',
+    'Yesterday',
+    'Fireball',
+    'Time',
+    'Poison'
+}
+
+playlist.add('Thunderstruck')
+print(playlist)
+
