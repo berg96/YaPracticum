@@ -50,12 +50,10 @@ print(playlist)
 playlist_1 = {'Три белых коня', 'Happy new year', 'Снежинка'}
 playlist_2 = {'Last christmas', 'Снежинка', 'Happy new year'}
 playlist_3 = playlist_1.union(playlist_2)
-
 print(playlist_3)
 
-playlist_1 = {'Голубой вагон', 'Облака', 'Yesterday', 'Наше лето'}
-playlist_2 = {'Наше лето', 'Голубой вагон', 'Облака'}
-playlist_3 = playlist_1.difference(playlist_2)
+playlist_4 = playlist_1.difference(playlist_2)
+print(playlist_4)
 
-print(playlist_3)
-
+playlist_5=playlist_1.intersection(playlist_2)
+print(playlist_5)
