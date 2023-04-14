@@ -69,3 +69,19 @@ friends =  {
 friends['Оля'] = 'Калининград'
 friends['Артем'] = 'Мурманск'
 print(friends)
+
+favorite_songs = {
+    'Тополиный пух': 'Иванушки international',
+    'Город золотой': 'Аквариум',
+    'Звезда по имени Солнце': 'Кино',
+    'Space Oddity': 'David Bowie',
+    'Рыба': 'Аквариум',
+    'Серенада Трубадура': 'Муслим Магомаев',
+}
+
+for singer in favorite_songs.values():
+	print('Доктор, я больше не могу слушать исполнителя ' + singer)
+
+for music in favorite_songs.keys():
+	print('Доктор, я каждый день по три раза слушаю песню ' + music)
+        
