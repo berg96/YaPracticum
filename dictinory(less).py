@@ -7,3 +7,5 @@ english = {
 }
 
 print(english['рука'])
+english['рука'] = 'arm'
+print(english['рука'])
