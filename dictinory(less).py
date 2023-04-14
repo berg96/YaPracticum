@@ -141,3 +141,19 @@ for song in new_music:
       playlist.add(song)
 print(playlist)
 
+friends = {
+    'Серёга': 'Омск', 
+    'Соня': 'Москва', 
+    'Дима': 'Челябинск', 
+    'Алина': 'Хабаровск', 
+    'Егор': 'Пермь'
+}
+
+def is_anyone_in(collection, destination):
+    for key in collection:
+        if collection[key] == destination:
+            print('В городе', collection[key], 'живёт', key, '. Обязательно зайду в гости!')
+        else:
+            print ('В городе', collection[key], 'у меня есть друг, но мне туда не надо.')
+
+is_anyone_in(friends, 'Хабаровск')
