@@ -63,6 +63,20 @@ def print_valid_cities(all_cities,used_cities):
     for city in valid_cities:
         print(city)
 
+def add_cities(all_cities, new_cities):
+    # Напишите код функции
+    for city in new_cities:
+        all_cities.add(city)
+
+new_cities = [
+    'Екатеринбург',
+    'Выборг' ,
+    'Владивосток',
+    'Казань',
+    'Why',
+    'Йезд'
+]
+
 all_cities = {
     'Абакан',
     'Астрахань', 
@@ -76,4 +90,5 @@ all_cities = {
 
 used_cities = {'Калуга', 'Абакан' , 'Новосибирск'}
 
+add_cities(all_cities, new_cities)
 print_valid_cities(all_cities, used_cities)
