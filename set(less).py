@@ -110,4 +110,4 @@ alisa_games = [
 ]
 
 for game in get_together_games(anfisa_games,alisa_games):
-    print(game)
+    print('👾',game)
