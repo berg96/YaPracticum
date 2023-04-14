@@ -45,3 +45,18 @@ friends =  {
 }
 for city in set(friends.values()):
     print(city)
+
+english = {
+    'рука': 'arm',
+    'нога': 'leg',
+    'хвост': 'tail',
+    'питон': 'python',
+    'бэкенд-разработчик': 'back-end developer',
+    'голова': 'head'
+}
+
+new_words = {'мозг': 'brain', 'логика': 'logic'}
+
+english.update(new_words)
+print(english)
+print(new_words)
