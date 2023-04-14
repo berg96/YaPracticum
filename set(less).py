@@ -9,7 +9,6 @@ unique_songs = {
 print('Только один концерт! Проездом из Бремена в Рио-де-Жанейро!')
 print('БРЕМЕНСКИЕ МУЗЫКАНТЫ!')
 
-# Объявляем цикл
 for song in unique_songs:
     print(song)
 
@@ -92,3 +91,23 @@ used_cities = {'Калуга', 'Абакан' , 'Новосибирск'}
 
 add_cities(all_cities, new_cities)
 print_valid_cities(all_cities, used_cities)
+
+def get_together_games(games_1,games_2):
+    return set(games_1).intersection(set(games_2))
+
+anfisa_games = [
+    'Online-chess',
+    'Города',
+    'DOOM',
+    'Крестики-нолики'
+]
+alisa_games = [
+    'DOOM',
+    'Online-chess',
+    'Города',
+    'GTA',
+    'World of tanks'
+]
+
+for game in get_together_games(anfisa_games,alisa_games):
+    print(game)
