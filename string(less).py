@@ -40,3 +40,14 @@ words_list = ['раз', 'два', 'три', 'четыре', 'пять', 'выш�
 new_string = '/'.join(words_list)
 print(new_string)
 
+quote_1 = 'Работает? Не трогай'
+quote_2 = 'Если твой код работает, значит это хороший код'
+quote_3 = 'Лень - главное достоинство программиста'
+
+def penult_word(message):
+    return message.split()[-3]
+
+print(penult_word(quote_1))
+print(penult_word(quote_2))
+print(penult_word(quote_3))
+
