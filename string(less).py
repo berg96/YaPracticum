@@ -11,3 +11,10 @@ index_list = [0, 1, 2, 8, 6, 17, 24]
 for i in index_list:
     print(monument_string[i])
 
+friends = ['Сергей', 'Соня', 'Миша', 'Дима', 'Алина']
+print(friends[-3])  # Миша
+print(friends[-5])  # Сергей
+
+monument_string = 'Я памятник себе воздвиг нерукотворный'
+print(monument_string[-2])   # ы
+print(monument_string[-37])  # Я 
