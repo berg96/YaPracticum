@@ -107,7 +107,7 @@ def calc_stat(listened):
     minutes = 0
     for len_song in listened:
         minutes += len_song
-    return (f'Вы прослушали {len(listened)} песен общей продолжительностью {minutes} минут.')
+    return (f'Вы прослушали {len(listened)} песен общей продолжительностью {int(minutes/60)} минут.')
 
 print(calc_stat([189, 148, 210, 144, 174, 158, 163, 189, 227, 198]))
 
