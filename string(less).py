@@ -19,3 +19,11 @@ monument_string = 'Я памятник себе воздвиг нерукотв�
 print(monument_string[-2])
 print(monument_string[-37])
 
+counter_str = 'Раз-два-три-четыре-пять, вышел зайчик погулять'
+counter_list = counter_str.split('-')
+print(counter_list)
+
+blok_str = 'Ночь. Улица. Фонарь. Аптека'
+blok_list = blok_str.split('. ')
+print(blok_list)
+
