@@ -125,6 +125,18 @@ def process_query(query):
     name = query.split(', ')
     if name[0] == 'Анфиса':
         return process_anfisa(name[1])
+    else:
+        return process_friend(name[0], name[1])
+    
+def process_friend(name, query):
+    if name in DATABASE:
+        if query == 'ты где?':
+            return f'{name} в городе {DATABASE[name]}'
+        else:
+            return '<неизвестный запрос>'
+    else:
+        return f'У тебя нет друга по имени {name}'
+    
 def format_friends_count(friends_count):
     if friends_count == 1:
         return '1 друг'
@@ -153,4 +165,5 @@ print(process_query('Анфиса, кто все мои друзья?'))
 print(process_query('Анфиса, где все мои друзья?'))
 print(process_query('Анфиса, кто виноват?'))
 print(process_query('Соня, ты где?'))
-
+print(process_query('Коля, что делать?'))
+print(process_query('Антон, ты где?')) 
