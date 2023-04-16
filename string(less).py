@@ -12,9 +12,10 @@ for i in index_list:
     print(monument_string[i])
 
 friends = ['Сергей', 'Соня', 'Миша', 'Дима', 'Алина']
-print(friends[-3])  # Миша
-print(friends[-5])  # Сергей
+print(friends[-3])
+print(friends[-5])
 
 monument_string = 'Я памятник себе воздвиг нерукотворный'
-print(monument_string[-2])   # ы
-print(monument_string[-37])  # Я 
+print(monument_string[-2])
+print(monument_string[-37])
+
