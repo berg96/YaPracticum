@@ -98,3 +98,7 @@ print(process_anfisa('Сколько у меня друзей?'))
 print(process_anfisa('Кто все мои друзья?'))
 print(process_anfisa('Где все мои друзья?'))
 
+def print_time(hour, minute, second):
+    print(f'На часах {hour}:{minute}:{second}')  # Аргумент должен содержать f-строку
+
+print_time('19', '28', '06')
