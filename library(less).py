@@ -28,3 +28,10 @@ print('Уже', start_time, 'Поехали!')
 landing_time = dt.datetime(1961, 4, 12, 10, 55, 0)
 print(landing_time - start_time) 
 
+import datetime as dt
+
+utc_time = dt.datetime.utcnow()
+period = dt.timedelta(hours=3)
+moscow_time = utc_time + period
+print(moscow_time)
+
