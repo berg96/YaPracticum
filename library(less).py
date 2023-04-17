@@ -11,3 +11,18 @@ def find_a_present(prizes):
 print(find_a_present(['кукла', 'жвачка', 'игрушечный питон']))
 print(find_a_present(['мяч', 'чебурашка', 'лосяш']))
 
+from random import choice
+
+answers = ['Норм.', 'Лучше всех :)', 'Ну так', 'Отличненько!', 'Ничего, жить буду']
+
+def how_are_you(answers):
+    return choice(answers)
+
+print(how_are_you(answers))
+
+import datetime as dt 
+
+start_time = dt.datetime(1961, 4, 12, 9, 7, 0)
+
+print('Уже', start_time, 'Поехали!') 
+
