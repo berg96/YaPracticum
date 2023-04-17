@@ -9,9 +9,17 @@ url = 'https://wttr.in'
 
 weather_parameters = {
     '0': '',
-    'T': '1'
+    'T': '1',
+    'M': '',
 }
 
-response = requests.get(url, params=weather_parameters)  # передайте параметры в http-запрос
+request_headers = {
+    'Accept-Language': 'ru'
+}
+
+response = requests.get(url, params=weather_parameters, headers=request_headers)  # передайте параметры в http-запрос
+headers = response.headers
 
 print(response.text)
+print(f'Время ответа: {headers["date"]}') 
+
