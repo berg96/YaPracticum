@@ -73,3 +73,11 @@ def what_time_friend(friend):
 
 print(what_time_city('Екатеринбург'))
 print(what_time_friend('Соня'))
+
+def what_time(friend):
+    utc_time = dt.datetime.utcnow()
+    city = DATABASE[friend]
+    return utc_time + dt.timedelta(hours=UTC_OFFSET[city])
+
+
+print(what_time('Соня').strftime('%H:%M'))
