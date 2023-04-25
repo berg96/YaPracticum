@@ -41,12 +41,25 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.content {
+  font-size: 0;
+  background-color: #8aafcf;
+  width: 790px;
+  margin: 0 auto;
+}
+
 .card {
   width: 350px;
   background-color: #e3f3ff;
   margin-bottom: 60px;
+  margin-right: 90px;
   padding: 45px 45px 70px;
   border: solid 2px rgba(250, 50, 50, 0.4);
+  display: inline-block;
+}
+
+.no-right-margin {
+  margin-right: 0;
 }
 
 .card-title {
