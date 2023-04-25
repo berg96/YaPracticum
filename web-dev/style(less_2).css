@@ -40,13 +40,22 @@ h1 {
 .card {
   width: 350px;
   background-color: #e3f3ff;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  border: solid 2px rgba(250, 50, 50, 0.4);
 }
 
 .card-title {
   font-size: 24px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .card-text {
   font-size: 16px;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 25px;
 }
