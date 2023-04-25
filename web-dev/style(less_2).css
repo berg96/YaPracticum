@@ -10,6 +10,10 @@ a {
   font-weight: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
