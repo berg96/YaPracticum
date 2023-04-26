@@ -18,7 +18,7 @@ body {
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-header {
+.header {
   height: 100vh;
   background-color: #eee;
   background-image: url(https://pictures.s3.yandex.net/frontend-developer/free-course/cover.jpg);
@@ -27,7 +27,7 @@ header {
   text-align: center;
 }
 
-h1 {
+.header-title {
   font-size: 140px;
   color: white;
   text-transform: uppercase;
