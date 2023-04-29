@@ -40,3 +40,11 @@ word4 = 'строки.'
 text = word1 + word2 + word3 + word4
 
 print(text)
+
+steps_yesterday = 8452
+steps_today = 6783
+
+steps_sum = steps_yesterday + steps_today  
+
+print('Сколько шагов сделал Геннадий за два дня?')
+print(steps_sum)
