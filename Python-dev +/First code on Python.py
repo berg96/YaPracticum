@@ -65,3 +65,7 @@ print(six * 7)
 # А умножение строки на число скопирует строку несколько раз
 lol = 'хо'
 print(lol * 10)
+
+number = 100
+rubles = ' рублей'
+print(str(number) + rubles)
