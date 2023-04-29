@@ -48,3 +48,20 @@ steps_sum = steps_yesterday + steps_today
 
 print('Сколько шагов сделал Геннадий за два дня?')
 print(steps_sum)
+
+one_hundred = 100
+five_hundred = 500
+print(one_hundred + five_hundred)
+# Будет напечатано: 600
+
+a = 'ха'
+print(a + a + a + a)
+# Будет напечатано: хахахаха
+
+# Если умножить число на число - никаких неожиданностей не будет
+six = 6
+print(six * 7)
+
+# А умножение строки на число скопирует строку несколько раз
+lol = 'хо'
+print(lol * 10)
