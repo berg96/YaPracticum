@@ -17,3 +17,17 @@ title = '1984'  # Число в кавычках тоже становится �
 space = ' ' # Даже пробел — это тоже строка
 twenty_five = 25
 about_pi = 3
+
+twenty_five = 25
+about_pi = 3
+
+total = twenty_five + about_pi
+
+print(total)
+
+twenty_five = '25'
+about_pi = '3'
+
+total = twenty_five + about_pi
+
+print(total)
