@@ -27,3 +27,7 @@ for i in reversed(range(11)):
 countdown_str = countdown_str + 'поехали!'
 
 print(countdown_str)
+
+for messages_count in range(6):
+    if messages_count > 0:
+        print(f'Новых сообщений: {messages_count}')
