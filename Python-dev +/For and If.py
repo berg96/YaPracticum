@@ -14,3 +14,7 @@ for kid in kids:
 
 for i in range(1, 5):
     print("Вагон №" + str(i))
+
+seasons = ['зима', 'весна', 'лето', 'осень']
+for season in reversed(seasons):
+    print(season) 
