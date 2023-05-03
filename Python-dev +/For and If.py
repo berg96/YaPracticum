@@ -11,3 +11,6 @@ candies = ['Батончик', 'Сникерс', 'Мишка Косолапый'
 for kid in kids:
     for candy in candies:
         print(kid, 'получает конфету', candy)
+
+for i in range(1, 5):
+    print("Вагон №" + str(i))
