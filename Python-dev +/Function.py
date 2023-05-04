@@ -21,3 +21,9 @@ def hello(name, bonus):
 
 hello("Дарт Вейдер", "печеньки")
 hello("Винни Пух", "мёд")
+
+
+def print_home(name='Инкогнито', planet='Икс'):
+    print(name + ' живёт на планете ' + planet)
+
+print_home(planet='Земля')  
