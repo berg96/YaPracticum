@@ -7,6 +7,10 @@ def check_mail():
         print('Никто не пишет.')
 
 check_mail()
-check_mail()
 new_mail = 1
 check_mail()
+
+def hello(name):
+    print(name + ', приветствую тебя!')
+
+hello('Максим')
