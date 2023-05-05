@@ -135,3 +135,11 @@ english = {
 english['рука'] = 'arm'
 
 print(english['рука'])
+
+
+old_letters = {
+    'ять': 'Ѣ',
+    'юс малый': 'Ѧ',
+    'юс большой': 'Ѫ'}
+
+print(old_letters.values())
