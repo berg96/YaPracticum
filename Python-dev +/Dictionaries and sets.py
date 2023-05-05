@@ -143,3 +143,12 @@ old_letters = {
     'юс большой': 'Ѫ'}
 
 print(old_letters.values())
+
+
+favorite_songs = {
+    'Тополиный пух': 'Иванушки international',
+    'Город золотой': 'Аквариум',
+    'Звезда по имени Солнце': 'Кино'
+}
+
+print(favorite_songs.keys())
