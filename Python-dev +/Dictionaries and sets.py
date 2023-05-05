@@ -67,3 +67,10 @@ playlist_2 = {'Наше лето', 'Голубой вагон', 'Облака'}
 playlist_3 = playlist_1.difference(playlist_2)
 
 print(playlist_3)
+
+
+films_1 = {'Форсаж', 'Достучаться до небес', 'Мстители: война бесконечности'}
+films_2 = {'Мстители: война бесконечности', 'Форсаж', 'Матрица'}
+films_3 = films_1.intersection(films_2)
+
+print(films_3)
