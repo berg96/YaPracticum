@@ -1,37 +1,33 @@
-def say_about():
-    print('Привет, я Анфиса!')
-    print('Я персональный помощник.')
-    print('Я ещё маленькая,')
-    print('но постоянно расту и умнею:')
-    print('ведь мой код каждый день дописывают!')
+DATABASE = {
+    'Серёга': 'Омск',
+    'Соня': 'Москва',
+    'Миша': 'Москва',
+    'Дима': 'Челябинск',
+    'Алина': 'Красноярск',
+    'Егор': 'Пермь',
+    'Коля': 'Красноярск'
+}
 
-say_about()
+def process_anfisa(query):
+    if query == 'Сколько у меня друзей?':
+        count = len(DATABASE)
+        return 'У тебя ' + str(count) + ' друзей.'
+    # Здесь проверьте, что переменная query равна строке 'Кто все мои друзья?'
+    elif query == 'Кто все мои друзья?':  
+        friends_string = 'Твои друзья: '
+        # Чтобы получить перечень друзей - 
+        # переберите словарь DATABASE в цикле
+        for friend in DATABASE:     
+            friends_string += friend + ' '     # Добавляйте к переменной friends_string имя друга и пробел
+        # Верните строку, составленную из 'Твои друзья: ' и friends_string 
+        return(friends_string)  
+    elif query == 'Где все мои друзья?':
+        return 'Я поняла, это вопрос про города!'
+    else:
+        return '<неизвестный запрос>'
 
-
-temperature = -25
-weather = 'солнечно'
-
-print('Сегодня ' + weather)
-print(f'Температура воздуха {temperature} градусов')
-
+# Не изменяйте следующий код
 print('Привет, я Анфиса!')
-# допишите код ниже
-friends = ['Сергей', 'Соня', 'Дима', 'Алина', 'Егор']
-
-print(friends)
-
-
-def say_hello(current_hour):
-    if current_hour <= 5 or current_hour >= 23:
-        print('Доброй ночи!')
-    elif current_hour >= 6 and current_hour <= 11:
-        print('Доброе утро!')
-    elif current_hour >= 12 and current_hour <= 17:
-        print('Добрый день!')
-    elif current_hour >= 18 and current_hour <= 22:
-        print('Добрый вечер!')
-
-say_hello(4)
-say_hello(10)
-say_hello(15)
-say_hello(20)
+print(process_anfisa('Сколько у меня друзей?'))
+print(process_anfisa('Кто все мои друзья?'))
+print(process_anfisa('Где все мои друзья?'))
