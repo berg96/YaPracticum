@@ -20,3 +20,36 @@ songs_list = [
 unique_songs = set(songs_list)
 
 print(unique_songs)
+
+cities = [
+    'Вологда',
+    'Чебоксары',
+    'Тольятти',
+    'Москва',
+    'Бремен',
+    'Санкт-Петербург',
+    'Новороссийск',
+    'Челябинск',
+    'Вологда',
+    'Новосибирск',
+    'Челябинск',
+    'Санкт-Петербург',
+    'Москва',
+    'Новосибирск'
+]
+
+unique_cities = set(cities)
+for city in unique_cities:
+    print(f'- {city}')
+
+
+playlist = {
+    'Venus',
+    'Yesterday',
+    'Fireball',
+    'Time',
+    'Poison'
+}
+
+playlist.add('Thunderstruck')
+print(playlist)
