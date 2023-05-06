@@ -54,3 +54,7 @@ words_list = ['раз', 'два', 'три', 'четыре', 'пять', 'выш�
 new_string = '-'.join(words_list)
 
 print(new_string)
+
+
+weather = 'облачно'
+print(f'На улице сейчас {weather}.')
