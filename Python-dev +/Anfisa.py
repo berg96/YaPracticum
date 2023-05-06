@@ -8,6 +8,10 @@ DATABASE = {
     'Коля': 'Красноярск'
 }
 
+def process_query(query):
+    if query.split(', ')[0] == 'Анфиса':
+        return process_anfisa(query.split(', ')[1])
+
 # Новая функция, она возвращает правильное словосочетание, склоняя слово "друзья" 
 # в зависимости от того, какое число передано в аргументе friends_count
 def format_friends_count(friends_count):
@@ -38,7 +42,8 @@ def process_anfisa(query):
 
 
 print('Привет, я Анфиса!')
-print(process_anfisa('сколько у меня друзей?'))
-print(process_anfisa('кто все мои друзья?'))
-print(process_anfisa('где все мои друзья?'))
-print(process_anfisa('кто виноват?'))
+print(process_query('Анфиса, сколько у меня друзей?'))
+print(process_query('Анфиса, кто все мои друзья?'))
+print(process_query('Анфиса, где все мои друзья?'))
+print(process_query('Анфиса, кто виноват?'))
+print(process_query('Соня, ты где?'))
