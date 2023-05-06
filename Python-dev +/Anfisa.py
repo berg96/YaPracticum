@@ -11,6 +11,8 @@ DATABASE = {
 def process_query(query):
     if query.split(', ')[0] == 'Анфиса':
         return process_anfisa(query.split(', ')[1])
+    else:
+        return process_friend(query.split(', ')[0], query.split(', ')[1])
 
 # Новая функция, она возвращает правильное словосочетание, склоняя слово "друзья" 
 # в зависимости от того, какое число передано в аргументе friends_count
@@ -39,6 +41,15 @@ def process_anfisa(query):
         return f'Твои друзья в городах: {cities_string}'
     else:
         return '<неизвестный запрос>'
+    
+def process_friend(name, query):
+    if name in DATABASE:
+        if query == 'ты где?':
+            return f'{name} в городе {DATABASE[name]}'
+        else:
+            return '<неизвестный запрос>'
+    else:
+        return f'У тебя нет друга по имени {name}'
 
 
 print('Привет, я Анфиса!')
@@ -47,3 +58,5 @@ print(process_query('Анфиса, кто все мои друзья?'))
 print(process_query('Анфиса, где все мои друзья?'))
 print(process_query('Анфиса, кто виноват?'))
 print(process_query('Соня, ты где?'))
+print(process_query('Коля, что делать?'))
+print(process_query('Антон, ты где?')) 
