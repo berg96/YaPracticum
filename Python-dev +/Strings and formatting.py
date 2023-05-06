@@ -23,3 +23,11 @@ print(friends[-5])  # Сергей
 monument_string = 'Я памятник себе воздвиг нерукотворный'
 print(monument_string[-2])   # ы
 print(monument_string[-37])  # Я 
+
+
+milk_str = 'молоковоз'
+
+# Применяем метод split() с аргументом 'о':
+new_list = milk_str.split('о')
+
+print(new_list)
