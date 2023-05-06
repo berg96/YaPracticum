@@ -60,3 +60,4 @@ print(process_query('Анфиса, кто виноват?'))
 print(process_query('Соня, ты где?'))
 print(process_query('Коля, что делать?'))
 print(process_query('Антон, ты где?')) 
+
