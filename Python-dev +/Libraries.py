@@ -41,3 +41,9 @@ current_moment = dt.datetime(2023, 5, 7, 19, 39)  # и здесь
 total_time = current_moment - start_moment  # и здесь
 
 print(total_time)
+
+
+import datetime as dt
+
+utc_time = dt.datetime.utcnow()
+print(utc_time)
