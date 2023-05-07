@@ -19,3 +19,11 @@ import random as r
 
 # Теперь к библиотеке random нужно обращаться только через псевдоним r:
 print(r.randint(0, 100)) # Случайное целое число от 0 до 100
+
+
+import datetime as dt 
+
+# Взлёт: 1961 год, 12 апреля, 9 часов утра, 7 минут 
+start_time = dt.datetime(1961, 4, 12, 9, 7, 0)
+
+print('Уже', start_time, 'Поехали!') 
