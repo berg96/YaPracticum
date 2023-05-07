@@ -31,3 +31,13 @@ print('Уже', start_time, 'Поехали!')
 landing_time = dt.datetime(1961, 4, 12, 10, 55, 0)
 
 print(landing_time - start_time) 
+
+
+import datetime as dt
+
+start_moment = dt.datetime(2023, 4, 29, 18, 19)  # Напишите код здесь
+current_moment = dt.datetime(2023, 5, 7, 19, 39)  # и здесь
+
+total_time = current_moment - start_moment  # и здесь
+
+print(total_time)
