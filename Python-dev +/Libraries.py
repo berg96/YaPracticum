@@ -62,3 +62,16 @@ moscow_time = utc_time + period
 
 # Печатаем
 print(moscow_time) 
+
+
+import datetime as dt
+
+
+# дата первого осеннего снега в Новосибирске в 2018
+first_snow = dt.datetime(2018, 9, 9)
+
+# дата последнего весеннего снега в Новосибирске в 2018
+last_snow = dt.datetime(2018, 5, 19)
+
+print(last_snow.strftime('Последний снег выпал в %U-ю неделю года.'))
+print(first_snow.strftime('А первый снег пошёл в %U-ю неделю.')) 
