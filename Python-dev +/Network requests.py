@@ -44,4 +44,25 @@ print(f'Код ответа = {code}')
 # с примечанием, каким захочется, на любом языке
 headers = response.headers
 print(f'Тип содержимого: {headers["content-type"]}')
-print(f'Время ответа: {headers["date"]}')
+#print(f'Время ответа: {headers["date"]}')
+
+
+import requests
+
+url = 'https://wttr.in'
+
+weather_parameters = {
+    '0': '',
+    'T': '',
+    'M': '',
+}
+
+request_headers = {
+    'Accept-Language': 'ru'
+    # заполните словарь с заголовками
+}
+
+# не забудьте передать параметры и заголовки в http-запрос
+# через аргументы `params` и `headers` функции get()
+response = requests.get(url, params = weather_parameters, headers = request_headers)
+print(response.text)
