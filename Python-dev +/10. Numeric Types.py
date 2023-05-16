@@ -20,3 +20,18 @@ print(i)
 i = Decimal('3.3') + Decimal('4.1')
 print(i)
 # Вывод в терминал: 7.4
+
+x = 121 / 7
+print(type(x)) 
+
+
+# Получаем данные в секундах
+response = 424562
+# Переведите полученное значение в необходимые единицы измерения
+
+seconds = response % 60
+minutes = (response // 60) % 60
+hours = ((response // 60) // 60) % 24
+days = (response // 60 // 60) // 24
+
+print(days, hours, minutes, seconds)
