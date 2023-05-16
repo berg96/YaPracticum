@@ -35,3 +35,13 @@ hours = ((response // 60) // 60) % 24
 days = (response // 60 // 60) // 24
 
 print(days, hours, minutes, seconds)
+
+
+weight = 75  # Вес
+height = 175 # Рост
+dist = 9.75  # Расстояние в км
+hours = 2    # Время движения в часах
+
+spent_calories = (0.035 * weight + (((dist/hours) ** 2) / height) * (0.029 * weight)) * hours * 60# Напишите формулу расчета
+
+print(spent_calories) 
