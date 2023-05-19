@@ -52,3 +52,15 @@ print(status_string.lower())
 alarm_string = 'всё сломалось, проект не работает!'
 # А вот тут немного паники не повредит: переводим текст сообщения в верхний регистр
 print(alarm_string.upper())
+
+distance_string = 'сегодня ВЫ прошли 12 КМ'
+print(distance_string.capitalize())
+# Вывод в терминал: Сегодня вы прошли 12 км
+
+user_name_string = 'пользователь антон'
+print(user_name_string.title())
+# Вывод в терминал: Пользователь Антон
+
+inverted_string = 'ПрОйДеНо ШаГоВ зА ДеНь: 18500'
+print(inverted_string.swapcase())
+# Вывод в терминал: пРоЙдЕнО шАгОв За дЕнЬ: 18500 
