@@ -27,3 +27,10 @@ hackers_movies = ['Трон', 'Военные игры', 'Тихушники',
 for movie in recommended_movies:
     if movie in hackers_movies:
         print(f'Разработчикам рекомендуем посмотреть фильм "{movie}"')
+
+
+simple_range = range(1, 10, 2)
+print(simple_range)
+
+# Вывод в терминал: range(1, 10, 2)
+# А где числа-то?
