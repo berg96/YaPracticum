@@ -42,3 +42,7 @@ print(new_movie_ratings)
 # Вывод в терминал: [4.9, 5.2, 4.5, 4.0]
 # Хм, неловко вышло: накрутили рейтинг так, что получили 5.2 по пятибалльной шкале.
 # TODO Ладно, позже починим.
+
+movie_ratings = [4.7, 5.0, 4.3, 3.8]
+new_movie_ratings = [rating + 0.2 for rating in movie_ratings]
+print(new_movie_ratings)
