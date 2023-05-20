@@ -134,3 +134,8 @@ movie_ratings = [4.7, 5.0, 4.3, 3.8]
 rating = movie_ratings.index(4.3)
 print(rating)
 # Вывод в терминал: 2
+
+movie_ratings = [4.7, 5.0, 4.3, 3.8, 4.7, 4.1]
+rating_count = movie_ratings.count(4.7)
+print(rating_count)
+# Вывод в терминал: 2
