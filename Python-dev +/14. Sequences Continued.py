@@ -139,3 +139,25 @@ movie_ratings = [4.7, 5.0, 4.3, 3.8, 4.7, 4.1]
 rating_count = movie_ratings.count(4.7)
 print(rating_count)
 # Вывод в терминал: 2
+
+movie_ratings = [4.7, 5.0, 4.3, 3.8, 4.7, 4.1]
+movie_ratings.sort()
+print(movie_ratings)
+# Вывод в терминал: [3.8, 4.1, 4.3, 4.7, 4.7, 5.0]
+
+movies = ['Матрица', 'Хакеры', 'Трон']
+movies.sort(reverse = True)
+print(movies)
+# Вывод в терминал: ['Хакеры', 'Трон', 'Матрица']
+
+movie_ratings = [4.7, 5.0, 4.3, 3.8, 4.7, 4.1]
+print(id(movie_ratings))
+# Вывод в терминал: 27337512
+
+# Разворот списка методом reverse()
+movie_ratings.reverse()
+print(id(movie_ratings))
+# Вывод в терминал: 27337512
+
+print(movie_ratings)
+# Вывод в терминал: [4.1, 4.7, 3.8, 4.3, 5.0, 4.7]
