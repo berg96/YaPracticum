@@ -183,3 +183,13 @@ movie_ratings = [4.7, 5.0, 4.3, 3.8, 4.7, 4.1]
 movie_ratings.clear()
 print(movie_ratings)
 # Вывод в терминал: []
+
+force_words = ['сила', 'пребудет', 'с', 'тобой', 'Да']
+print(id(force_words))
+# Место для вашего кода
+copy = force_words.pop(0)
+force_words.insert(0, force_words.pop(-1))
+force_words.append(copy)
+print(force_words)
+# Убедимся, что это тот же объект, что и в начале программы
+print(id(force_words))
