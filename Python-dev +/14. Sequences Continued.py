@@ -224,3 +224,12 @@ print(package_2)
 # Вывод в терминал: ('2:00:01', 15000)
 print(type(package_2))
 # Вывод в терминал: <class 'tuple'>
+
+package = ('2:00:01', 15000)
+
+time, steps = package
+
+print(steps)
+# Вывод в терминал: 15000
+print(time)
+# Вывод в терминал: '2:00:01'
