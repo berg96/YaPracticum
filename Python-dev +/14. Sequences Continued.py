@@ -62,3 +62,14 @@ movie_ratings = [4.7, 5.0, 4.3, 3.8]
 new_movie_ratings = [rating for rating in movie_ratings if rating > 4.5]
 print(new_movie_ratings)
 # Вывод в терминал:[4.7, 5.0]
+
+
+week = [
+    'Понедельник', 'Вторник', 'Среда', 
+    'Четверг', 'Пятница', 'Суббота', 'Воскресенье'
+]
+
+mon, tue, wed, thu, fri, sat, sun = week
+
+print(wed)
+# Вывод в терминал: Среда
