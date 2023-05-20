@@ -122,3 +122,10 @@ print(movies)
 # вызовет исключение
 #movies.remove('Сеть')
 # Вывод в терминал: ValueError: list.remove(x): x not in list
+
+movies = ['Матрица', 'Тихушники', 'Хакеры', 'Трон']
+movie = movies.pop(2)
+print(movie)
+# Вывод в терминал: Хакеры
+print(movies)
+# Вывод в терминал: ['Матрица', 'Тихушники', 'Трон']
