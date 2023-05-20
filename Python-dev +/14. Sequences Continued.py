@@ -193,3 +193,17 @@ force_words.append(copy)
 print(force_words)
 # Убедимся, что это тот же объект, что и в начале программы
 print(id(force_words))
+
+
+# Функция tuple() преобразует строку с текстом о достижении в кортеж
+achievement = 'Отлично!'
+tpl_achiv = tuple(achievement)
+print(tpl_achiv)
+#Вывод в терминал: ('О', 'т', 'л', 'и', 'ч', 'н', 'о', '!')
+
+# Если передать в функцию неитерируемый объект (например, число),
+# Python сообщит, что не может выполнить такое преобразование.
+steps = 15000
+#tpl_steps = tuple(15000)
+
+#Вывод в терминал: TypeError: 'int' object is not iterable
