@@ -161,3 +161,20 @@ print(id(movie_ratings))
 
 print(movie_ratings)
 # Вывод в терминал: [4.1, 4.7, 3.8, 4.3, 5.0, 4.7]
+
+movie_ratings = [4.7, 5.0, 4.3, 3.8, 4.7, 4.1]
+copy_movie_ratings = movie_ratings.copy()
+print(id(movie_ratings))
+# Вывод в терминал: 38282024
+
+print(id(copy_movie_ratings))
+# Вывод в терминал: 38281640
+
+# Применим сортировку к исходному списку
+movie_ratings.sort()
+print(movie_ratings)
+# Вывод в терминал: [3.8, 4.1, 4.3, 4.7, 4.7, 5.0]
+
+# Элементы списка-копии остались неотсортированными
+print(copy_movie_ratings)
+# Вывод в терминал: [4.7, 5.0, 4.3, 3.8, 4.7, 4.1]
