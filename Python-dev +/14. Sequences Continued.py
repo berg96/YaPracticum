@@ -49,3 +49,11 @@ print(new_movie_ratings)
 
 numbers = [i**2 for i in range(1,11)] # Место для вашего кода Создайте список целых чисел 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
 print(numbers)
+
+
+movie_ratings = [4.7, 5.0, 4.3, 3.8]
+new_movie_ratings = [
+   rating + 0.2 if rating < 4.9 else rating for rating in movie_ratings
+]
+print(new_movie_ratings)
+# Вывод в терминал: [4.9, 5.0, 4.5, 4.0]
