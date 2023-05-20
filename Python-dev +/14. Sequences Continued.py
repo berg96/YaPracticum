@@ -249,3 +249,16 @@ not_srtd_tpl = (5**5, 5**2, 5**1, 5**4, 5**0, 5**3)
 # Измените это выражение, чтобы результатом был кортеж
 srtd_tpl = tuple(sorted(not_srtd_tpl))
 print(srtd_tpl)
+
+days = ('пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс')
+steps = [1500, 3445, 13222, 10000, 12555, 1300, 6000]
+
+#result = []
+#for i in range(7):
+ #   result.append((days[i], steps[i]))
+
+result = [(days[i], steps[i]) for i in range(7)]
+
+# Место для вашего кода
+
+print(result)
