@@ -129,3 +129,8 @@ print(movie)
 # Вывод в терминал: Хакеры
 print(movies)
 # Вывод в терминал: ['Матрица', 'Тихушники', 'Трон']
+
+movie_ratings = [4.7, 5.0, 4.3, 3.8]
+rating = movie_ratings.index(4.3)
+print(rating)
+# Вывод в терминал: 2
