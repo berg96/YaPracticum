@@ -111,3 +111,8 @@ print(maxim_toys)
 #maxim_toys.remove('кукла')
 print(maxim_toys)
 # Вывод в терминал: KeyError: 'кукла'
+
+maxim_toys = {'машинка', 'скакалка', 'кубики', 'пистолетик'}
+toy = maxim_toys.pop()
+print(f'Вам — {toy}!')
+print(f'Оставшиеся игрушки: {maxim_toys}')
