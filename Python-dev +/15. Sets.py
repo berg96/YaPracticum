@@ -23,3 +23,13 @@ print(movie_ratings_set)
 
 print(type(movie_ratings_set))
 # Вывод в консоль: <class 'set'>
+
+empty_set = set()
+print(empty_set)
+# Вывод в терминал: set()
+print(type(empty_set))
+# Вывод в терминал: <class 'set'>
+
+empty_set = {}
+print(type(empty_set))
+# Вывод в терминал: <class 'dict'>
