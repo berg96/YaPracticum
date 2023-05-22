@@ -195,9 +195,10 @@ id_string = '32 48 2 6 14 58 2 88 9 14 123 48 3 17 42 42 7'
 
 id_list = id_string.split()
 id_int_list = [int(id) for id in id_list]
+id_set = set()
 for id in id_int_list:
-    if id_int_list.count(id) > 1:
+    if id in id_set:
         print(f'Найден дубликат ID {id}')
-        id_int_list.remove(id)
-id_int_list.sort()
-print (id_int_list)
+    else:
+        id_set.add(id)
+print (sorted(id_set))
