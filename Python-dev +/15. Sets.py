@@ -39,3 +39,10 @@ uniq_movies = set(movies)
 print(uniq_movies)
 # Вывод в терминал: {'Сеть', 'Матрица', 'Тихушники', 'Хакеры', 'Трон'}
 # Дублирующиеся названия удалены!
+
+not_uniq_str = 'съешь же ещё этих мягких французских булок да выпей чаю'
+str_without_space = not_uniq_str.replace(" ","")
+uniq_str_set = set(str_without_space)
+count_char = len(uniq_str_set)
+# место для вашего кода
+print(count_char)
