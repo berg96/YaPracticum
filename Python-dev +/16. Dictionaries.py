@@ -13,3 +13,9 @@ status_dict = {
     0: 'off',
     (0, 1): 'выключатель сломан'
 }
+
+empty_dict = {}
+print(empty_dict)
+# Вывод в терминал: {}
+print(type(empty_dict))
+# Вывод в терминал: <class 'dict'>
