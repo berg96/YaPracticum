@@ -292,3 +292,32 @@ print(id(movies_only_link))
 # Вывод в терминал: 1781869204544
 # У movies и movies_only_link один и тот же id,
 # значит, обе переменные ссылаются на один объект; копия словаря не создана.
+
+favorite_movies = {}
+movies_for_delete = []
+
+recommended_movies = {
+    'Хенкок': {'rating': 4.5, 'review': 'Смотреть можно'},
+    'Матрица': {'rating': 4.7, 'review': 'Фильм крут'},
+    'Кибер': {'rating': 2.5, 'review': 'Так себе киношечка'},
+    'Трон': {'rating': 3.8, 'review': 'Так себе киношечка'},
+    'Мстители': {'rating': 4.7, 'review': 'Фильм крут'},
+    'Хакеры':  {'rating': 4.5, 'review': 'Смотреть можно'}
+}
+
+# место для вашего кода
+for movie in recommended_movies:
+    if recommended_movies[movie]['rating'] >= 4.0 :
+        review = recommended_movies[movie]['review']
+        print(f'У фильма "{movie}" хороший отзыв: "{review}". Фильм добавлен в избранное.')
+        favorite_movies[movie] = recommended_movies[movie]
+    else:
+        review = recommended_movies[movie]['review']
+        movies_for_delete.append(movie)
+        print(f'Фильм "{movie}" не интересен: "{review}". Фильм удалён из рекомендаций.')
+
+for movie in movies_for_delete:
+    del recommended_movies[movie]
+
+print(favorite_movies)
+print(recommended_movies)
