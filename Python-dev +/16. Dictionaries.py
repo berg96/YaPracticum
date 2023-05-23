@@ -44,3 +44,11 @@ print(movies_info)
 # Всё так упаковано, что элементы не видны. Но они есть!
 for each in movies_info:
     print(each)
+
+movie_ratings = [4.7, 5.0, 4.3, 4.0]
+movies = ['Матрица', 'Хакеры', 'Трон', 'Кибер']
+
+movies_info = zip(movies, movie_ratings)
+
+print(dict(movies_info))
+# Вывод в терминал: {'Матрица': 4.7, 'Хакеры': 5.0, 'Трон': 4.3, 'Кибер': 4.0}
