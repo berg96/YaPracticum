@@ -57,3 +57,15 @@ print_profile('Spider-man',
 # name: Питер Паркер
 # talent: ['Суперсила', 'Паучье чутье', 'Паутина']
 # сity: Нью-Йорк
+
+def get_mean(values):
+    # Место для вашего кода
+    avr_num = 0
+    for num in values:
+        avr_num += num
+    return avr_num/len(values)
+
+# Список значений для теста
+num_lst = [3, 6, 5, 7, 9, 1]
+# Тут вызов функции.
+print(f'{get_mean(num_lst):.2f}')  # Напечатайте результат вызова функции.
