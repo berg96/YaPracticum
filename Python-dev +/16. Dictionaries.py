@@ -42,3 +42,5 @@ movies_info = zip(movies, movie_ratings)
 print(movies_info)
 # Вывод в терминал: <zip object at 0x017D4B48>
 # Всё так упаковано, что элементы не видны. Но они есть!
+for each in movies_info:
+    print(each)
