@@ -33,3 +33,12 @@ print(movies)
 movies = dict.fromkeys(['Матрица', 'Хакеры', 'Трон', 'Кибер'], 4.8)
 print(movies)
 # Вывод в терминал: {'Матрица': 4.8, 'Хакеры': 4.8, 'Трон': 4.8, 'Кибер': 4.8}
+
+movie_ratings = [4.7, 5.0, 4.3, 4.0]
+movies = ['Матрица', 'Хакеры', 'Трон', 'Кибер']
+
+movies_info = zip(movies, movie_ratings)
+
+print(movies_info)
+# Вывод в терминал: <zip object at 0x017D4B48>
+# Всё так упаковано, что элементы не видны. Но они есть!
