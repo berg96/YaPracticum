@@ -55,3 +55,21 @@ maxim_days_left = maxim_birthday - today
 
 print(lera_days_left.days)
 print(maxim_days_left.days)
+
+import datetime as dt
+
+def get_days_to_birthday(date_birthday):
+    today = dt.date.today()
+    today_year = today.year
+    if date_birthday == today:
+        return 0
+    date_birthday = date_birthday.replace(year=today_year)
+    return (date_birthday - today).days
+
+
+lera_birthday = dt.date(2015, 5, 16)
+maxim_birthday = dt.date(2011, 12, 16)
+
+print(get_days_to_birthday(lera_birthday))
+print(get_days_to_birthday(maxim_birthday))
+print(get_days_to_birthday(dt.date.today()))
