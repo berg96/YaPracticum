@@ -306,16 +306,15 @@ recommended_movies = {
 }
 
 # место для вашего кода
-for movie in recommended_movies:
-    if recommended_movies[movie]['rating'] >= 4.0 :
-        print(f'У фильма "{movie}" хороший отзыв: "{recommended_movies[movie]["review"]}". Фильм добавлен в избранное.')
+for movie, rait_rev in recommended_movies.items():
+    if rait_rev['rating'] >= 4.0 :
+        print(f'У фильма "{movie}" хороший отзыв: "{rait_rev["review"]}". Фильм добавлен в избранное.')
         favorite_movies[movie] = recommended_movies[movie]
     else:
-        review = recommended_movies[movie]['review']
-        print(f'Фильм "{movie}" не интересен: "{recommended_movies[movie]["review"]}". Фильм удалён из рекомендаций.')
+        print(f'Фильм "{movie}" не интересен: "{rait_rev["review"]}". Фильм удалён из рекомендаций.')
+        movies_for_delete.append(movie)
 
 for movie in movies_for_delete:
     del recommended_movies[movie]
 
 print(favorite_movies)
-print(recommended_movies)
