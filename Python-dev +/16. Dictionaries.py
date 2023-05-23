@@ -210,3 +210,20 @@ print(keys)
 values = movies.values()
 print(values)
 # Вывод в терминал: dict_values([4.7, 4.3, 3.8, 2.5, 4.1])
+
+movies = {
+    'Матрица': 4.7,
+    'Хакеры': 4.3,
+    'Трон': 3.8,
+    'Кибер': 2.5,
+    'Пятая власть': 4.1
+}
+
+for movie_name in movies:
+    print(movie_name)
+
+# Матрица
+# Хакеры
+# Трон
+# Кибер
+# Пятая власть
