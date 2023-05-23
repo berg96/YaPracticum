@@ -69,3 +69,17 @@ def get_mean(values):
 num_lst = [3, 6, 5, 7, 9, 1]
 # Тут вызов функции.
 print(f'{get_mean(num_lst):.2f}')  # Напечатайте результат вызова функции.
+
+def test_range(start, end, *nums): # Укажите параметры
+    # место для вашего кода
+    result = []
+    for num in nums:
+        if num >= start and num <= end:
+            result.append(num)
+        else:
+            print ('Число за границами диапазона')
+    return result
+
+start = 4
+end = 12
+print(test_range(start, end, 5, 16, 32, 6, 7, 1))
