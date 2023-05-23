@@ -19,3 +19,9 @@ print(empty_dict)
 # Вывод в терминал: {}
 print(type(empty_dict))
 # Вывод в терминал: <class 'dict'>
+
+movies = [('Матрица', 4.7), ('Трон', 3.8)]
+
+movies_dict = dict(movies)
+print(movies_dict)
+# Вывод в терминал: {'Матрица': 4.7, 'Трон': 3.8}
