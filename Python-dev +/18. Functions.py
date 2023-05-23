@@ -42,3 +42,18 @@ get_boost(x, 4.3, 4.5, 3.0, 2.5, 4.7)
 # 3.2
 # 2.7
 # 4.9
+
+def print_profile(character, **info):
+    print(f'Персонаж: {character}')
+    for key, value in info.items():
+        print(f'{key}: {value}')
+
+print_profile('Spider-man',
+              name='Питер Паркер',
+              talent=['Суперсила', 'Паучье чутье', 'Паутина'],
+              сity='Нью-Йорк')
+# Вывод в терминал:
+# Персонаж: Spider-man
+# name: Питер Паркер
+# talent: ['Суперсила', 'Паучье чутье', 'Паутина']
+# сity: Нью-Йорк
