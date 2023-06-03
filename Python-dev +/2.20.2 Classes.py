@@ -27,6 +27,18 @@ class Sword:
         return (f'Меч "{self.name}" заточен,'
                 f' {self.material} отлично поддалась обработке.')
 
+    def __str__(self):
+        # Можно задать любую строку, например
+        # «Не печатай меня, ведь я — объект!».
+        # Но лучше пусть при печати выводится что-то осмысленное,
+        # например имя объекта и его основные параметры.
+        return (
+            f'Меч — «{self.name}». '
+            f'Выкован из материала {self.material}, '
+            f'длина клинка — {self.blade_length}, '
+            f'прочность — {self.strength}.'
+        )
+
 
 # Создаём экземпляр класса: меч Верный.
 katana = Sword('Верный', 1.5,
@@ -45,3 +57,5 @@ for i in range(5):
 # После атак узнаём прочность мечей.
 print(katana.strength)
 print(classic_sword.strength)
+print(katana)
+print(classic_sword)
