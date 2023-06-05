@@ -56,7 +56,7 @@ print(dict(movies_info))
 # В цикле for перебираем последовательность range(3),
 # по очереди передаём значение каждого элемента в переменную num,
 # для каждого элемента словаря создаём ключ и значение
-new_dict = {'Ключ ' + str(num) : 'Значение ' + str(num) for num in range(3)}
+new_dict = {'Ключ ' + str(num): 'Значение ' + str(num) for num in range(3)}
 
 print(new_dict)
 
