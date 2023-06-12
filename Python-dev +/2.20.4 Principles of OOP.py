@@ -10,18 +10,28 @@ class MeleeWeapon:
     def slashing_blow(self):
         # При рубящем ударе уменьшаем прочность меча на 10.
         self.strength -= 10
-        print(f'Нанесён рубящий удар оружием {self.name}.')
+        return f'Нанесён рубящий удар оружием {self.name}.'
 
     # Метод родительского класса — заточка оружия.
     def sharpen(self):
         # При заточке восстанавливаем стартовую прочность оружия.
         self.strength = 100
-        print(f'Оружие "{self.name}" заточено.')
+        return f'Оружие "{self.name}" заточено.'
 
 
 # Дочерний класс Sword.
 class Sword(MeleeWeapon):
-    ...
+    # Переопределяем метод родительского класса...
+    def slashing_blow(self):
+        # ...меняем значение снижения прочности...
+        self.strength -= 5
+        # ...и меняем сообщение.
+        return f'Мечом {self.name} был нанесен рубящий удар.'
+
+    # Собственный метод для класса Sword.
+    def piercing_strike(self):
+        self.strength -= 5
+        return f'Нанесён пронзающий удар мечом {self.name}.'
 
 
 class Axe(MeleeWeapon):
@@ -48,6 +58,13 @@ brodex = Axe('Верный', "железо")
 # Древнегреческий одноручный меч.
 xiphos = Sword('Разящий')
 
-# Каждый из дочерних классов имеет такие же методы и свойства,что иродительский
-brodex.slashing_blow()
-xiphos.sharpen()
+# Для класса Sword будет вызван переопределённый метод.
+print(xiphos.slashing_blow())
+# Для класса Axe будет вызван метод родительского класса.
+print(brodex.slashing_blow())
+# Исходное значение прочности для класса Sword будет уменьшено
+# на переопределённое значение.
+print(xiphos.strength)
+# Исходное значение прочности для класса Axe будет уменьшено
+# на значение, указанное в родительском классе.
+print(brodex.strength)
