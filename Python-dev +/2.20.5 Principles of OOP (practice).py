@@ -25,6 +25,9 @@ class Parrot(Bird):
             )
         return super().describe(full)
 
+    def repeat(self, phrase: str) -> str:
+        return f'Попугай {self.name} говорит: {phrase}.'
+
 
 class Penguin(Bird):
     def __init__(self, name: str, size: str, genus: str) -> None:
@@ -43,8 +46,11 @@ class Penguin(Bird):
             )
         return super().describe(full)
 
+    def swimming(self) -> str:
+        return f'Пингвин {self.name} плавает со средней скоростью 11 км/ч.'
+
 
 kesha = Parrot('Ара', 'средний', 'красный')
 kowalski = Penguin('Королевский', 'большой', 'Aptenodytes')
-print(kesha.describe())
-print(kowalski.describe(True))
+print(kesha.repeat('Кеша хороший!'))
+print(kowalski.swimming())
