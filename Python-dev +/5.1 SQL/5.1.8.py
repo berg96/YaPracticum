@@ -16,4 +16,17 @@ results = cur.execute(
 for result in results:
     print(result)
 
+results = cur.execute(
+    '''
+    SELECT product_type,
+           title
+    FROM video_products
+    WHERE release_year > 1980
+    ORDER BY product_type DESC, title;
+'''
+)
+
+for result in results:
+    print(result)
+
 con.close()
