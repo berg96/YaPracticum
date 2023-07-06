@@ -6,7 +6,8 @@ cur = con.cursor()
 # Запрашиваем все столбцы всех записей из таблицы video_products;
 # символ * после SELECT означает "верни все поля найденных записей".
 results = cur.execute('''
-  SELECT *
+  SELECT title,
+         release_year
   FROM video_products;
 ''')
 
