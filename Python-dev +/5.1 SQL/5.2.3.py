@@ -1,6 +1,6 @@
 import sqlite3
 
-con = sqlite3.connect('db.sqlite_3')
+con = sqlite3.connect('db_video_3.sqlite')
 cur = con.cursor()
 
 cur.executescript(
